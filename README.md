@@ -82,7 +82,7 @@ python fano.py
 
 ### Временная сложность
 
-O(N^2\*logN)
+O(N\*logN)
 
 ---
 
@@ -97,7 +97,9 @@ O(N^2\*logN)
 Пример
 
 ```
-bw_restore(24, 'styssesvmrgath  ceiis eee r')
+id, msg = bw_transform("BANANA")
+print(id, msg)
+print(bw_restore(id, msg))
 ```
 
 Команда для запуска

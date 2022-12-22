@@ -4,7 +4,6 @@ from operator import itemgetter
 def bw_transform(s):
     n = len(s)
     m = sorted([s[i:n]+s[0:i] for i in range(n)])
-    print(m)
     I = m.index(s)
     L = ''.join([q[-1] for q in m])
     return (I, L)
